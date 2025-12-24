@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Travel Guide</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Arial;max-width:820px;margin:40px auto;padding:0 16px}
+    .card{border:1px solid #e5e7eb;border-radius:14px;padding:18px}
+    input,button{padding:10px 12px;border-radius:10px;border:1px solid #d1d5db;font-size:16px}
+    button{cursor:pointer}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    #out{white-space:pre-wrap;background:#0b1020;color:#dbeafe;padding:14px;border-radius:12px;margin-top:14px}
+    small{color:#6b7280}
+  </style>
+</head>
+<body>
+  <h1>AI Travel Guide 🌍</h1>
+  <p><small>Frontend (Static Web Apps) → Azure Functions API</small></p>
+
+  <div class="card">
+    <div class="row">
+      <input id="city" placeholder="Ville (ex: Paris)" />
+      <button id="btn">Explorer</button>
+    </div>
+
+    <div id="out">Résultat JSON apparaîtra ici…</div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
